@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section("content")
-<div class="pt-5">
+<div class="bg-color pt-5">
     <div class="container">
         <div class="row">
             @foreach ($comicList as $comic)
-            <div class="col-2 mx-auto">
-                <div>
+            <div class="col-6 col-md-4 col-xl-2 mx-auto">
+                <div class="cover-box">
                     <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" class="img-fluid">
                 </div>
-                <p class="text-uppercase mt-3">{{$comic['series']}}</p>
+                <p class="text-uppercase text-white ">{{$comic['series']}}</p>
             </div>
             @endforeach
             

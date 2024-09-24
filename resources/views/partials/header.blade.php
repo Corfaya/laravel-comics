@@ -1,5 +1,5 @@
 <header class="">
-    <div class="bg-primary mb-4">
+    <div class="bg-primary">
         <div class="container">
         
             <div class="row">
@@ -22,9 +22,14 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="d-flex justify-content-between align-items-center">
+                <nav class="navbar navbar-expand-lg py-4">
+                    {{-- <div class="d-flex justify-content-between align-items-center py-4"> --}}
                     <a href="{{route('homepage')}}"><img class="img-fluid" src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC Comics"></a>
-                    <ul class="list-unstyled d-none d-lg-flex m-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-0 d-none d-lg-flex">
                         <li class="px-2 fw-bolder">
                             <a class="text-decoration-none text-uppercase text-dark" href="">Characters</a>
                         </li>
@@ -53,18 +58,19 @@
                             <a class="text-decoration-none text-uppercase text-dark" href="">News</a>
                         </li>
                         <li class="px-2 fw-bolder dropdown">
-                            <a class="text-decoration-none text-uppercase text-dark dropdown-toggle" role="button" data-bs-toggle="dropdown" href="">Shop</a>
+                            <a class="text-decoration-none text-uppercase text-dark dropdown-toggle shop-custom-dropdown" role="button" data-bs-toggle="dropdown" href="">Shop</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Item</a></li>
                                 <li><a class="dropdown-item" href="#">Another item</a></li>
                               </ul>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    </div>
+                    <form class="d-none d-lg-flex" role="search">
                         <input class="form-control border-top-0 border-start-0 border-end-0 text-end" type="search" placeholder="Search" aria-label="Search">
                         <a href="#"><i class="bi bi-search text-dark"></i></a>
                       </form>
-                </div>
+                    </nav>
             </div>
         </div>
     </div>
