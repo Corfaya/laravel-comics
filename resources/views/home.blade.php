@@ -14,11 +14,11 @@
             @endforeach
             
             
-            <div class="col-12">
+            {{-- <div class="col-12">
                 <div class="d-flex justify-content-center my-4">
                     <button class="btn text-uppercase fw-bolder text-white rounded-0">Load More</button>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
