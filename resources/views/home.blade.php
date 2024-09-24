@@ -7,18 +7,18 @@
             @foreach ($comicList as $comic)
             <div class="col-2 mx-auto">
                 <div>
-                    <img src="{{$comic['thumb']}}" alt="{{$comic["title"]}}" class="img-fluid">
+                    <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" class="img-fluid">
                 </div>
-                <p class="text-uppercase text-white mt-3"></p>
+                <p class="text-uppercase mt-3">{{$comic['series']}}</p>
             </div>
             @endforeach
             
             
-            {{-- <div class="col-12">
+            <div class="col-12">
                 <div class="d-flex justify-content-center my-4">
-                    <button class="btn text-uppercase fw-bolder text-white rounded-0">Load More</button>
+                    <button class="btn btn-sm text-uppercase fw-bolder text-white rounded-0">Load More</button>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </div>
 </div>
