@@ -31,34 +31,34 @@
                       <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-0 d-none d-lg-flex">
                         <li class="px-2 fw-bolder">
-                            <a class="text-decoration-none text-uppercase text-dark active" href="">Characters</a>
+                            <a class="text-decoration-none text-uppercase text-dark {{Route::currentRouteName() === 'characters' ? 'active' : ''}}" href="{{route('characters')}}">Characters</a>
                         </li>
                         <li class="px-2 fw-bolder">
-                            <a class="text-decoration-none text-uppercase text-dark" href="">Comics</a>
+                            <a class="text-decoration-none text-uppercase text-dark{{Route::currentRouteName() === 'comics' ? 'active' : ''}}" href="{{route('comics')}}">Comics</a>
                         </li>
                         <li class="px-2 fw-bolder">
-                            <a class="text-decoration-none text-uppercase text-dark" href="">Movies</a>
+                            <a class="text-decoration-none text-uppercase text-dark{{Route::currentRouteName() === 'movies' ? 'active' : ''}}" href="{{route('movies')}}">Movies</a>
                         </li>
                         <li class="px-2 fw-bolder">
-                            <a class="text-decoration-none text-uppercase text-dark" href="">Tv</a>
+                            <a class="text-decoration-none text-uppercase text-dark{{Route::currentRouteName() === 'tv' ? 'active' : ''}}" href="{{route('tv')}}">Tv</a>
                         </li>
                         <li class="px-2 fw-bolder">
-                            <a class="text-decoration-none text-uppercase text-dark" href="">Games</a>
+                            <a class="text-decoration-none text-uppercase text-dark{{Route::currentRouteName() === 'games' ? 'active' : ''}}" href="{{route('games')}}">Games</a>
                         </li>
                         <li class="px-2 fw-bolder">
-                            <a class="text-decoration-none text-uppercase text-dark" href="">Collectibles</a>
+                            <a class="text-decoration-none text-uppercase text-dark{{Route::currentRouteName() === 'collectibles' ? 'active' : ''}}" href="{{route('collectibles')}}">Collectibles</a>
                         </li>
                         <li class="px-2 fw-bolder">
-                            <a class="text-decoration-none text-uppercase text-dark" href="">Videos</a>
+                            <a class="text-decoration-none text-uppercase text-dark{{Route::currentRouteName() === 'videos' ? 'active' : ''}}" href="{{route('videos')}}">Videos</a>
                         </li>
                         <li class="px-2 fw-bolder">
-                            <a class="text-decoration-none text-uppercase text-dark" href="">Fans</a>
+                            <a class="text-decoration-none text-uppercase text-dark{{Route::currentRouteName() === 'fans' ? 'active' : ''}}" href="{{route('fans')}}">Fans</a>
                         </li>
                         <li class="px-2 fw-bolder">
-                            <a class="text-decoration-none text-uppercase text-dark" href="">News</a>
+                            <a class="text-decoration-none text-uppercase text-dark{{Route::currentRouteName() === 'news' ? 'active' : ''}}" href="{{route('news')}}">News</a>
                         </li>
                         <li class="px-2 fw-bolder dropdown">
-                            <a class="text-decoration-none text-uppercase text-dark dropdown-toggle shop-custom-dropdown" role="button" data-bs-toggle="dropdown" href="">Shop</a>
+                            <a class="text-decoration-none text-uppercase text-dark dropdown-toggle shop-custom-dropdown{{Route::currentRouteName() === 'shop' ? 'active' : ''}}" role="button" data-bs-toggle="dropdown" href="{{route('shop')}}">Shop</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Item</a></li>
                                 <li><a class="dropdown-item" href="#">Another item</a></li>
