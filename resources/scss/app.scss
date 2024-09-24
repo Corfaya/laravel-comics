@@ -16,11 +16,17 @@ input, .search {
     border-bottom: 2px solid $primary_color;
 }
 
-.active {
-    color: $primary_color;
-    border-bottom: 5px solid $primary_color;
-    padding-bottom: 52px;
+.links {
+    a {
+        color: black;
+        &.active {
+            color: $primary_color;
+            border-bottom: 5px solid $primary_color;
+            padding-bottom: 52px;
+        }
+    }
 }
+
 
 @media screen and (max-width: 1200px) {
     .active {

@@ -22,10 +22,6 @@ Route::get('/characters', function () {
     return view('pages.characters');
 })->name('characters');
 
-Route::get('/comics', function () {
-    return view('pages.comics');
-})->name('comics');
-
 Route::get('/movies', function () {
     return view('pages.movies');
 })->name('movies');
