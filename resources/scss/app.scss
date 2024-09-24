@@ -69,16 +69,19 @@ div.cover-box {
 /*FOOTER*/
 .footer-top {
     background-color: $primary_color;
+
     .blue-section {
         .w_square {
             width: 50px;
             height: 50px;
+
             img {
                 max-width: 100%;
                 max-height: 100%;
                 object-fit: contain;
                 object-position: center;
                 transition: all 0.3s ease;
+
                 &:hover {
                     transform: scale(1.1);
                 }
@@ -88,23 +91,57 @@ div.cover-box {
 }
 
 .footer-middle {
-        background-image: url("../img/footer-bg.jpg");
-        background-size: cover;
-        z-index: 2;
-        .bg-logo {
-            background-image: url("../img/dc-logo-bg.png");
-            background-position: right;
-            background-repeat: no-repeat;
-        }
-        .col-12 {
-            ul {
-                a {
-                    color: #838383;
-                    transition: color 0.3 ease;
-                    &:hover {
-                        color: #a5a5a5
-                    }
+    background-image: url("../img/footer-bg.jpg");
+    background-size: cover;
+
+    .bg-logo {
+        background-image: url("../img/dc-logo-bg.png");
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .col-12 {
+        ul {
+            a {
+                color: #838383;
+                transition: color 0.3 ease;
+
+                &:hover {
+                    color: #a5a5a5
                 }
             }
         }
     }
+
+    .policy-info {
+        background-color: transparent;
+        font-size: 15px;
+        color: #838383;
+        p {
+            margin: 0;
+        }
+        span, .cookies-custom {
+            cursor: pointer;
+            color: $primary_color;
+        }
+    }
+}
+
+.footer-bottom {
+    background-color: $footer_bg;
+
+    button {
+        border: 1px solid $primary_color;
+        transition: all 0.3 ease;
+
+        &:hover {
+            background-color: #ffffffa1;
+            color: #fff;
+            border: 1px solid #ffffffa1
+        }
+    }
+}
+
+.text_blue {
+    color: $primary_color;
+}
