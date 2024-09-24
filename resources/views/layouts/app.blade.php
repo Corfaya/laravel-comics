@@ -10,7 +10,7 @@
 </head>
 <body>
     @include('partials.header')
-    <main>
+    <main class="mt-3">
         {{-- segnaposto --}}
         @yield("content")
     </main>

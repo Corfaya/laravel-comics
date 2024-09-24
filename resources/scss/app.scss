@@ -8,6 +8,26 @@ a.shop-custom-dropdown::after {
     color: $primary_color
 }
 
+input {
+    width: 100%;
+}
+
+input, .search {
+    border-bottom: 2px solid $primary_color;
+}
+
+.active {
+    color: $primary_color;
+    border-bottom: 5px solid $primary_color;
+    padding-bottom: 52px;
+}
+
+@media screen and (max-width: 1200px) {
+    .active {
+        padding-bottom: 30px;
+    }
+}
+
 /*HOME*/
 .bg-hero {
     background-image: url("../img/jumbotron.jpg");

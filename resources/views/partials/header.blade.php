@@ -1,5 +1,5 @@
 <header>
-    <div class="bg-primary">
+    <div class="bg-primary mb-3">
         <div class="container">
         
             <div class="row">
@@ -22,7 +22,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-expand-lg py-4">
+                <nav class="navbar navbar-expand-lg p-0">
                     {{-- <div class="d-flex justify-content-between align-items-center py-4"> --}}
                     <a href="{{route('homepage')}}"><img class="img-fluid" src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC Comics"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                       <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-0 d-none d-lg-flex">
                         <li class="px-2 fw-bolder">
-                            <a class="text-decoration-none text-uppercase text-dark" href="">Characters</a>
+                            <a class="text-decoration-none text-uppercase text-dark active" href="">Characters</a>
                         </li>
                         <li class="px-2 fw-bolder">
                             <a class="text-decoration-none text-uppercase text-dark" href="">Comics</a>
@@ -67,8 +67,8 @@
                     </ul>
                     </div>
                     <form class="d-none d-lg-flex" role="search">
-                        <input class="form-control border-top-0 border-start-0 border-end-0 text-end" type="search" placeholder="Search" aria-label="Search">
-                        <a href="#"><i class="bi bi-search text-dark"></i></a>
+                        <input class="border-top-0 border-start-0 border-end-0 text-end" type="search" placeholder="Search" aria-label="Search">
+                        <a href="#" class="d-flex align-items-center search"><i class="bi bi-search text-dark"></i></a>
                       </form>
                     </nav>
             </div>
