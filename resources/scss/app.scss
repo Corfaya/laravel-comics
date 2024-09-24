@@ -13,6 +13,7 @@ a.shop-custom-dropdown::after {
     background-image: url("../img/jumbotron.jpg");
     background-size: cover;
     height: 400px;
+
     .main-btn {
         left: 10%;
         top: 92%;
@@ -21,6 +22,7 @@ a.shop-custom-dropdown::after {
         left: 10%;
         background-color: $primary_color;
         transition: all 0.3 ease;
+
         &:hover {
             background-color: darken($primary_color, 10%);
         }
@@ -29,11 +31,13 @@ a.shop-custom-dropdown::after {
 
 .bg-color {
     background-color: $main_bg;
+
     .col-12 {
         button {
             border: 1px solid $primary_color;
             padding: 10px 60px;
             transition: all 0.3 ease;
+
             &:hover {
                 background-color: $primary_color;
             }
@@ -47,15 +51,38 @@ div.cover-box {
     aspect-ratio: 1 / 1;
     cursor: pointer;
     overflow: hidden;
+
     img {
         min-width: 100%;
         max-height: 100%;
         object-fit: cover;
         object-position: top;
         transition: all 0.7s ease;
+
         &:hover {
             opacity: 0.5;
             transform: scale(1.2)
+        }
+    }
+}
+
+/*FOOTER*/
+.footer-top {
+    background-color: $primary_color;
+    .blue-section {
+        .w_square {
+            width: 50px;
+            height: 50px;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+                object-position: center;
+                transition: all 0.3s ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 }

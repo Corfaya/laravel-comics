@@ -1,4 +1,4 @@
-<header class="">
+<header>
     <div class="bg-primary">
         <div class="container">
         
