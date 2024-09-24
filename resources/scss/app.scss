@@ -9,6 +9,24 @@ a.shop-custom-dropdown::after {
 }
 
 /*HOME*/
+.bg-hero {
+    background-image: url("../img/jumbotron.jpg");
+    background-size: cover;
+    height: 400px;
+    .main-btn {
+        left: 10%;
+        top: 92%;
+        padding: 10px 20px;
+        font-size: 24px;
+        left: 10%;
+        background-color: $primary_color;
+        transition: all 0.3 ease;
+        &:hover {
+            background-color: darken($primary_color, 10%);
+        }
+    }
+}
+
 .bg-color {
     background-color: $main_bg;
     .col-12 {
