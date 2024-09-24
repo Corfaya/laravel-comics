@@ -86,3 +86,25 @@ div.cover-box {
         }
     }
 }
+
+.footer-middle {
+        background-image: url("../img/footer-bg.jpg");
+        background-size: cover;
+        z-index: 2;
+        .bg-logo {
+            background-image: url("../img/dc-logo-bg.png");
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+        .col-12 {
+            ul {
+                a {
+                    color: #838383;
+                    transition: color 0.3 ease;
+                    &:hover {
+                        color: #a5a5a5
+                    }
+                }
+            }
+        }
+    }
